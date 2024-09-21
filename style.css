@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+:root {
+
+    /* ### Primary */
+
+    --Blue: hsl(223, 87%, 63%);
+
+    /* ### Secondary */
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    /* ### Neutral */
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+    height: 100vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    height: 38%;
+}
+
+.top img {
+    width: 50px;
+    margin-top: 5px;
+}
+
+article {
+    margin-top: 30px;
+    /* border: 1px solid rgb(255, 0, 0);     */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+article p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+span {
+    font-weight: 600;
+    color: black;
+}
+
+.email-section {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.email {
+    border: .1px solid var(--Blue);
+    padding: 10px 180px 10px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.border {
+    border-color: red;
+}
+
+::placeholder {
+    color: var(--Gray);
+    padding-left: 10px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 0px 40px 0px 40px;
+    background-color: var(--Blue);
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.err-msg {
+    margin-left: -270px;
+    font-size: .7rem;
+    color: red;
+    font-style: italic;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid green; */
+    height: 62%;
+}
+
+.bottom img {
+    width: 80%;
+}
+
+.social-media {
+    /* border: 1px solid red; */
+    width: 100px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 15px;
+    color: var(--Blue);
+    border: .1px solid var(--Gray);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color: var(--Gray);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media (max-width:471px) {
+
+
+    .main-container {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+
+
+    .top img {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+
+    article p {
+        font-size: .85rem;
+        margin-top: 10px;
+    }
+
+    .email-section {
+        flex-direction: column;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .email {
+        padding-right: 150px;
+        margin-left: 10px;
+    }
+
+    button {
+        margin-top: 40px;
+        padding: 10px 135px 10px 135px;
+    }
+
+    .err-msg {
+        margin-left: 0px;
+        margin-top: -70px;
+    }
+
+    .bottom img {
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .social-media {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:375px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    article p {
+        font-size: .7rem;
+    }
+
+    .email {
+        padding-right: 120px;
+    }
+
+    button {
+        padding: 10px 110px 10px 110px;
+    }
+
+
+    .bottom img {
+        margin-top: 100px;
+        /* border: 1px solid blue; */
+    }
+
+    .social-media {
+        margin-top: 50px;
+    }
+}

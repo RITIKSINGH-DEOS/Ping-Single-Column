@@ -1,0 +1,1 @@
+#Responsive for max-width 375px and 471px
